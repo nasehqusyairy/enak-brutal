@@ -7,6 +7,7 @@
   <title>Enak Brutal | Landing Page</title>
   <link rel="stylesheet" href="./assets/css/main.min.css">
   <link rel="shortcut icon" href="./assets/img/LOGO BULAT.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Theme Color -->
   <!-- <meta name="theme-color" content="#008080"> -->
@@ -27,6 +28,29 @@
       background-size: cover;
       background-attachment: fixed;
     }
+
+    .menu-item:hover .menu-item-desc {
+      opacity: 1;
+    }
+
+    .menu-item-desc {
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+    }
+
+    #contact a img {
+      transition: all .3s ease-in-out;
+    }
+
+
+    #contact a img:hover {
+      transform: translateY(-1rem);
+      box-shadow: var(--bs-box-shadow);
+    }
+
+    #contact a:active img {
+      transform: translateY(-.5rem);
+    }
   </style>
 </head>
 
@@ -45,11 +69,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#myCarousel">Home</a>
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#myCarousel">Beranda</a>
+            <a class="nav-link" href="#about">Tentang</a>
             <a class="nav-link" href="#posts">Menu</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="#testimonies">Testimonies</a>
+            <a class="nav-link" href="#contact">Hubungi</a>
+            <a class="nav-link" href="#testimonies">Testimoni</a>
             <!-- <a class="btn btn-primary" href="./login.html">Sign In</a> -->
           </div>
         </div>
@@ -73,9 +97,10 @@
         </div>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-light" href="#">Sign up today</a></p>
+            <h1>Nikmati Kelezatan Sejati dengan Enak Brutal!</h1>
+            <p class="opacity-75">Ayam Geprek yang Renyah, Cheese Roll yang Menggoda, dan Teh Manis yang Memanjakan
+              Lidah Anda!</p>
+            <p><a class="btn btn-lg btn-light" href="https://wa.me/message/MXDRXQRWJNCEJ1">Pesan Sekarang</a></p>
           </div>
         </div>
       </div>
@@ -85,9 +110,18 @@
         </div>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-light" href="#">Learn more</a></p>
+            <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+              <div class="col-lg-4">
+                <img src="./assets/img/LOGO_TRANSPARAN.png" alt="" class="img-fluid mb-3">
+              </div>
+            </div>
+            <h1 data-aos="zoom-in" data-aos-delay="500">Selamat Datang di Enak Brutal - Surga bagi Pecinta Makanan!
+            </h1>
+            <p data-aos="zoom-in" data-aos-delay="750">Sambutlah Kedatangan Anda dengan Hidangan Lezat dan Porsi yang
+              Mengenyangkan. Temukan Kenikmatan yang
+              Sesungguhnya di Sini!</p>
+            <p data-aos="zoom-in" data-aos-delay="1000"><a class="btn btn-lg btn-light"
+                href="https://wa.me/message/MXDRXQRWJNCEJ1">Pesan Sekarang</a></p>
           </div>
         </div>
       </div>
@@ -97,9 +131,10 @@
         </div>
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-light" href="#">Browse gallery</a></p>
+            <h1>Kenyamanan Daring, Kenikmatan Nyata: Enak Brutal Hanya untuk Anda!</h1>
+            <p>Nikmati Layanan Daring Kami yang Praktis, Dapatkan Ayam Geprek, Cheese Roll, dan Teh Manis Favorit Anda
+              dalam Sekejap!</p>
+            <p><a class="btn btn-lg btn-light" href="https://wa.me/message/MXDRXQRWJNCEJ1">Pesan Sekarang</a></p>
           </div>
         </div>
       </div>
@@ -116,7 +151,7 @@
   <!-- END OF CAROUSEL -->
 
   <!-- COUNTDOWN -->
-  <section id="countdown" class="text-bg-secondary py-5">
+  <!-- <section id="countdown" class="text-bg-secondary py-5">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-3">
@@ -153,30 +188,27 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- END OF COUNTDOWN -->
 
   <!-- ABOUT -->
   <section id="about" class="text-bg-light py-5">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h3 class="display-4 text-dark mb-5">About Us</h3>
-          <p class="lead text-muted text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate excepturi illo beatae sunt. Soluta
-            cumque, error assumenda non necessitatibus neque minima ratione recusandae harum, sed illum molestias ex a!.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nostrum voluptates. Natus aut quia
-            voluptatum quam distinctio reiciendis id culpa repellat quos pariatur earum perferendis sapiente nulla, ad
-            iure rerum.
-          </p>
-          <p class="lead text-muted text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis et
-            reprehenderit
-            quos mollitia molestias.
-            Rem, odit eaque! Ipsa maiores praesentium nobis minima assumenda dignissimos libero. Animi provident
-            distinctio voluptas porro.</p>
+      <div class="row align-items-center flex-lg-row-reverse">
+        <div class="col-lg-6" data-aos="fade-left">
+          <img src="./assets/img/bg4.jpg" alt="" class="img-fluid rounded-3 mb-5 m-lg-0">
         </div>
         <div class="col-lg-6">
-          <img src="./assets/img/bg4.jpg" alt="" class="img-fluid rounded-3">
+          <h3 data-aos="fade-right" data-aos-delay="250" class="display-4 text-dark mb-5">Tentang Kami</h3>
+          <p class="lead text-muted text-justify" data-aos="fade-right" data-aos-delay="500">
+            Selain menyajikan hidangan yang luar biasa, Enak Brutal beroperasi secara daring, memberikan kemudahan bagi
+            pelanggan untuk menikmati makanan lezat kami di mana pun mereka berada. Melalui platform daring kami,
+            pelanggan dapat dengan mudah melakukan transaksi dengan menghubungi kami melalui WhatsApp dan Instagram yang
+            tertera. Kami menyediakan layanan pengiriman sehingga Anda dapat menikmati kelezatan Enak Brutal di
+            kenyamanan rumah Anda sendiri. Jadikan setiap hari Anda lebih enak dengan Ayam Geprek kami yang renyah atau
+            Cheese Roll yang menggoda. Segera hubungi kami untuk memesan dan rasakan sensasi brutal kelezatan yang kami
+            tawarkan!
+          </p>
         </div>
       </div>
     </div>
@@ -186,16 +218,37 @@
   <!-- POSTS -->
   <section id="posts" class="py-5 text-bg-secondary">
     <div class="container">
-      <h3 class="display-4 text-center mb-5">Our Menus</h3>
+      <h3 class="display-4 text-center mb-5" data-aos="fade-up">Daftar Menu</h3>
       <div class="row">
-        <div class="col-12 col-lg-4 mb-3">
+        <div class="col-12 col-lg-4 mb-3 position-relative menu-item" data-aos="fade-up">
           <img src="./assets/img/menu1.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 rounded menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Ayam Geprek</h5>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-4 mb-3">
+        <div class="col-12 col-lg-4 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="250">
           <img src="./assets/img/menu2.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 rounded menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Teh Manis</h5>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-4 mb-3">
+        <div class="col-12 col-lg-4 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="500">
           <img src="./assets/img/menu3.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 rounded menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Cheese Roll</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -211,13 +264,17 @@
       </div>
       <div class="col-lg-6">
         <div class="container">
-          <h3 class="display-4 text-dark mb-4 mt-3">Contact Us</h3>
+          <h3 class="display-4 text-dark mb-4 mt-3" data-aos="fade-right">Hubungi Kami</h3>
           <div class="row">
-            <div class="col mb-3">
-              <img src="./assets/img/wa.png" alt="" class="img-fluid w-100 rounded">
+            <div class="col mb-3" data-aos="fade-right">
+              <a href="https://wa.me/message/MXDRXQRWJNCEJ1">
+                <img src="./assets/img/wa.png" alt="" class="img-fluid w-100 rounded">
+              </a>
             </div>
-            <div class="col">
-              <img src="./assets/img/ig.jpg" alt="" class="img-fluid rounded">
+            <div class="col" data-aos="fade-right" data-aos-delay="250">
+              <a href="https://www.instagram.com/ebrut_">
+                <img src="./assets/img/ig.jpg" alt="" class="img-fluid rounded">
+              </a>
             </div>
           </div>
         </div>
@@ -229,16 +286,14 @@
   <!-- TESTIMONIES -->
   <section id="testimonies" class="text-bg-secondary py-5">
     <div class="container">
-      <h3 class="display-4 mb-5">Testimonies</h3>
+      <h3 class="display-4 mb-5" data-aos="fade-right">Testimoni</h3>
       <div class="row flex-nowrap overflow-x-auto">
         <div class="col-11 col-lg-5 mb-3">
-          <div class="card mb-3 bg-light text-dark">
+          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in">
             <div class="card-body p-5">
-              <h5 class="card-title">Always Up to Date</h5>
-              <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus aliquid
-                repellat magnam modi
-                assumenda nam, hic nesciunt deserunt vitae explicabo ut esse beatae quo placeat totam optio expedita
-                corporis.</p>
+              <h5 class="card-title">Besar dan Gurih</h5>
+              <p class="text-justify">Siapa sangka, Ayam Geprek Enak Brutal bisa se-besar dan segurih ini! Ukuran
+                porsinya memang 'brutal' tapi rasanya sungguh luar biasa.</p>
               <div class="d-flex">
                 <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
                   class="rounded-circle border border-primary">
@@ -249,46 +304,11 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3 bg-light text-dark">
+          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="250">
             <div class="card-body p-5">
-              <h5 class="card-title">Always Up to Date</h5>
-              <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus aliquid
-                repellat magnam modi.</p>
-              <div class="d-flex">
-                <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">John Doe</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-11 col-lg-5 mb-3">
-          <div class="card mb-3 bg-light text-dark">
-            <div class="card-body p-5">
-              <h5 class="card-title">Always Up to Date</h5>
-              <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus aliquid
-                repellat magnam modi.</p>
-              <div class="d-flex">
-                <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">John Doe</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 bg-light text-dark">
-            <div class="card-body p-5">
-              <h5 class="card-title">Always Up to Date</h5>
-              <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus aliquid
-                repellat magnam modi
-                assumenda nam, hic nesciunt deserunt vitae explicabo ut esse beatae quo placeat totam optio expedita
-                corporis.</p>
+              <h5 class="card-title">Segerr Brutal!</h5>
+              <p class="text-justify">Teh Manis dari Enak Brutal adalah minuman penyegar sempurna! Kesejukan dari teh
+                yang tepat, dengan takaran gula yang pas, membuat setiap tegukan begitu memuaskan.</p>
               <div class="d-flex">
                 <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
                   class="rounded-circle border border-primary">
@@ -302,13 +322,11 @@
         </div>
 
         <div class="col-11 col-lg-5 mb-3">
-          <div class="card mb-3 bg-light text-dark">
+          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="500">
             <div class="card-body p-5">
-              <h5 class="card-title">Always Up to Date</h5>
-              <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus aliquid
-                repellat magnam modi
-                assumenda nam, hic nesciunt deserunt vitae explicabo ut esse beatae quo placeat totam optio expedita
-                corporis.</p>
+              <h5 class="card-title">Mantap Jiwa</h5>
+              <p class="text-justify">Cheese Roll dari Enak Brutal adalah hidangan yang menenangkan jiwa. Setiap gigitan
+                menghadirkan sensasi keju yang melimpah, membuatku ingin kembali lagi dan lagi.</p>
               <div class="d-flex">
                 <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
                   class="rounded-circle border border-primary">
@@ -319,11 +337,44 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3 bg-light text-dark">
+          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="250">
             <div class="card-body p-5">
-              <h5 class="card-title">Always Up to Date</h5>
-              <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus aliquid
-                repellat magnam modi.</p>
+              <h5 class="card-title">Cita Rasa yang Melekat</h5>
+              <p class="text-justify">Cheese Roll dari Enak Brutal adalah jawaban bagi pencinta keju seperti saya!
+                Rasanya yang creamy dan lembut di dalam lapisan kulit yang garing, sungguh tak terlupakan!</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">John Doe</h6>
+                  <p class="m-0 text-muted">Full-Stack Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-11 col-lg-5 mb-3">
+          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="500">
+            <div class="card-body p-5">
+              <h5 class="card-title">Bikin Ketagihan!</h5>
+              <p class="text-justify">Ayam Geprek Enak Brutal benar-benar membuatku ketagihan! Teksturnya yang renyah
+                dan bumbunya yang khas sungguh menggugah selera..</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">John Doe</h6>
+                  <p class="m-0 text-muted">Full-Stack Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in">
+            <div class="card-body p-5">
+              <h5 class="card-title">Pilihan Tepat</h5>
+              <p class="text-justify">Teh Manis dari Enak Brutal adalah teman setia saat cuaca panas. Rasanya yang segar
+                dan manis pas membuatnya menjadi minuman yang cocok untuk setiap kesempatan.</p>
               <div class="d-flex">
                 <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
                   class="rounded-circle border border-primary">
@@ -350,6 +401,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000
+    });
+  </script>
 
   <script>
     // Set the date we're counting down to
