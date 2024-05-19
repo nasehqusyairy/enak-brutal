@@ -292,22 +292,44 @@
   <!-- TESTIMONIES -->
   <section id="testimonies" class="text-bg-secondary py-5">
     <div class="container">
-      <h3 class="display-4 mb-5" data-aos="fade-right">Testimoni</h3>
-      <div class="row flex-nowrap overflow-x-auto">
-        <div class="col-11 col-lg-5 mb-3">
+      <div class="row flex-lg-row-reverse">
+        <div class="col-12 col-lg-8 mb-3">
+          <div class="card text-bg-light">
+            <div class="card-body p-5">
+              <h3 class="display-4 mb-5">Testimoni</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama</label>
+                  <input type="text"
+                    class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0"
+                    id="name" required placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email"
+                    class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0"
+                    id="email" required placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Pesan</label>
+                  <textarea class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0"
+                    id="message" rows="3" required placeholder=""></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <input type="submit" class="btn btn-primary" value="Kirim">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
           <div class="card mb-3 bg-light text-dark" data-aos="zoom-in">
             <div class="card-body p-5">
               <h5 class="card-title">Besar dan Gurih</h5>
               <p class="text-justify">Siapa sangka, Ayam Geprek Enak Brutal bisa se-besar dan segurih ini! Ukuran
                 porsinya memang 'brutal' tapi rasanya sungguh luar biasa.</p>
-              <div class="d-flex">
-                <img src="./assets/img/testimoni1.jpg" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">Muizzul Azizah Oktavianing Putri</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
+              <h6 class="m-0">Muizzul Azizah Oktavianing Putri</h6>
+              <!-- <p class="m-0 text-muted">Full-Stack Developer</p> -->
             </div>
           </div>
           <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="250">
@@ -315,80 +337,8 @@
               <h5 class="card-title">Segerr Brutal!</h5>
               <p class="text-justify">Teh Manis dari Enak Brutal adalah minuman penyegar sempurna! Kesejukan dari teh
                 yang tepat, dengan takaran gula yang pas, membuat setiap tegukan begitu memuaskan.</p>
-              <div class="d-flex">
-                <img src="./assets/img/testimoni2.jpg" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">Ridwan Jauhar Kafabihi</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-11 col-lg-5 mb-3">
-          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="500">
-            <div class="card-body p-5">
-              <h5 class="card-title">Mantap Jiwa</h5>
-              <p class="text-justify">Cheese Roll dari Enak Brutal adalah hidangan yang menenangkan jiwa. Setiap gigitan
-                menghadirkan sensasi keju yang melimpah, membuatku ingin kembali lagi dan lagi.</p>
-              <div class="d-flex">
-                <img src="./assets/img/testimoni3.jpg" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">Frisca Yuni</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="250">
-            <div class="card-body p-5">
-              <h5 class="card-title">Cita Rasa yang Melekat</h5>
-              <p class="text-justify">Cheese Roll dari Enak Brutal adalah jawaban bagi pencinta keju seperti saya!
-                Rasanya yang creamy dan lembut di dalam lapisan kulit yang garing, sungguh tak terlupakan!</p>
-              <div class="d-flex">
-                <img src="./assets/img/testimoni4.jpg" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">Mohammad Nasyikh Al-Qusyairy</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-11 col-lg-5 mb-3">
-          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in" data-aos-delay="500">
-            <div class="card-body p-5">
-              <h5 class="card-title">Bikin Ketagihan!</h5>
-              <p class="text-justify">Ayam Geprek Enak Brutal benar-benar membuatku ketagihan! Teksturnya yang renyah
-                dan bumbunya yang khas sungguh menggugah selera..</p>
-              <div class="d-flex">
-                <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">John Doe</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 bg-light text-dark" data-aos="zoom-in">
-            <div class="card-body p-5">
-              <h5 class="card-title">Pilihan Tepat</h5>
-              <p class="text-justify">Teh Manis dari Enak Brutal adalah teman setia saat cuaca panas. Rasanya yang segar
-                dan manis pas membuatnya menjadi minuman yang cocok untuk setiap kesempatan.</p>
-              <div class="d-flex">
-                <img src="./assets/img/LOGO_LIGHT MODE.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-primary">
-                <div class="ms-3">
-                  <h6 class="m-0">John Doe</h6>
-                  <p class="m-0 text-muted">Full-Stack Developer</p>
-                </div>
-              </div>
+              <h6 class="m-0">Ridwan Jauhar Kafabihi</h6>
+              <!-- <p class="m-0 text-muted">Full-Stack Developer</p> -->
             </div>
           </div>
         </div>
