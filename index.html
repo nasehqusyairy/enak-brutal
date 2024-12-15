@@ -4,15 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enak Brutal | Landing Page</title>
+  <title>Hilsaveil | Landing Page</title>
   <link rel="stylesheet" href="./assets/css/main.min.css">
-  <link rel="shortcut icon" href="./assets/img/LOGO BULAT.png">
+  <link rel="shortcut icon" href="./assets/img/LOGO BULAT.jpg">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Theme Color -->
   <!-- <meta name="theme-color" content="#008080"> -->
   <meta name="theme-color" content="#FAF3D0">
   <style>
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: .75rem;
+    }
+
+    #home {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      text-align: center;
+    }
+
     .carousel-item {
       height: 32rem;
     }
@@ -65,10 +78,10 @@
 
   <!-- NAVBAR -->
   <div class="position-relative" style="height: 75px;">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#myCarousel">
-          <img src="./assets/img/LOGO_PANJANG.png" alt="" height="50" class="d-inline-block align-text-top">
+          <img src="./assets/img/LOGO BULAT.jpg" alt="" height="50" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,12 +89,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#myCarousel">Beranda</a>
-            <a class="nav-link" href="#about">Tentang</a>
-            <a class="nav-link" href="#posts">Menu</a>
-            <a class="nav-link" href="#contact">Hubungi</a>
-            <a class="nav-link" href="#testimonies">Testimoni</a>
-            <!-- <a class="btn btn-primary" href="./login.html">Sign In</a> -->
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#posts">Products</a>
+            <a class="nav-link" href="#testimonies">Testimonies</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -89,96 +101,67 @@
   </div>
   <!-- END OF NAVBAR -->
 
-  <!-- CAROUSEL -->
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
-        aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active carousel-item-start">
-        <div class="carousel-item-bg"
-          style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(./assets/img/bg6.jpg);">
-        </div>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Nikmati Kelezatan Sejati dengan Enak Brutal!</h1>
-            <p class="opacity-75">Ayam Geprek yang Renyah, Cheese Roll yang Menggoda, dan Teh Manis yang Memanjakan
-              Lidah Anda!</p>
-            <p><a class="btn btn-lg btn-light" href="https://wa.me/6289677862100?text=E-Brut%20Order%20Form%20%F0%9F%8D%BD%0AHello%20Foodie!%20Ready%20to%20indulge%20in%20some%20deliciousness%3F%0A%0A%F0%9F%8C%9F%20Customer%20Details%20%F0%9F%8C%9F%0ANama%20%20%20%20%20%3A%0AAlamat%20%20%20%3A%0ANo%20Telp%20%3A%0A%0A%F0%9F%8D%97%20Your%20Delicious%20Order%F0%9F%8D%97%0A1.%20%0A2.%20%0A3.%20%0A%0A%F0%9F%92%B8%20Payment%20Options%20%F0%9F%92%B8%0A%0A%F0%9F%92%B0%20Shopeepay%3A%0A082338556431%20%0Aan.%20Muizzul%20Azizah%20Oktavianing%20Putri%20%2F%20Putri%20Oktavia%0A%0A%F0%9F%8D%B4%20Bon%20App%C3%A9tit!
-">Pesan
-                Sekarang</a></p>
-          </div>
+
+  <!-- HERO -->
+  <section id="home" class="py-5 text-light"
+    style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(./assets/img/bg5.jpg);">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-lg-4">
+          <img src="./assets/img/LOGO_TRANSPARAN.png" alt="" class="img-fluid mb-3">
         </div>
       </div>
-      <div class="carousel-item carousel-item-next carousel-item-start">
-        <div class="carousel-item-bg"
-          style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(./assets/img/bg5.jpg);">
-        </div>
-        <div class="container">
-          <div class="carousel-caption">
-            <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-              <div class="col-lg-4">
-                <img src="./assets/img/LOGO_TRANSPARAN.png" alt="" class="img-fluid mb-3">
-              </div>
-            </div>
-            <h1 data-aos="zoom-in" data-aos-delay="500">Selamat Datang di Enak Brutal - Surga bagi Pecinta Makanan!
-            </h1>
-            <p data-aos="zoom-in" data-aos-delay="750">Sambutlah Kedatangan Anda dengan Hidangan Lezat dan Porsi yang
-              Mengenyangkan. Temukan Kenikmatan yang
-              Sesungguhnya di Sini!</p>
-            <p data-aos="zoom-in" data-aos-delay="1000"><a class="btn btn-lg btn-light" href="https://wa.me/6289677862100?text=E-Brut%20Order%20Form%20%F0%9F%8D%BD%0AHello%20Foodie!%20Ready%20to%20indulge%20in%20some%20deliciousness%3F%0A%0A%F0%9F%8C%9F%20Customer%20Details%20%F0%9F%8C%9F%0ANama%20%20%20%20%20%3A%0AAlamat%20%20%20%3A%0ANo%20Telp%20%3A%0A%0A%F0%9F%8D%97%20Your%20Delicious%20Order%F0%9F%8D%97%0A1.%20%0A2.%20%0A3.%20%0A%0A%F0%9F%92%B8%20Payment%20Options%20%F0%9F%92%B8%0A%0A%F0%9F%92%B0%20Shopeepay%3A%0A082338556431%20%0Aan.%20Muizzul%20Azizah%20Oktavianing%20Putri%20%2F%20Putri%20Oktavia%0A%0A%F0%9F%8D%B4%20Bon%20App%C3%A9tit!
-">Pesan
-                Sekarang</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-item-bg"
-          style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(./assets/img/bg3.jpg);">
-        </div>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Kenyamanan Daring, Kenikmatan Nyata: Enak Brutal Hanya untuk Anda!</h1>
-            <p>Nikmati Layanan Daring Kami yang Praktis, Dapatkan Ayam Geprek, Cheese Roll, dan Teh Manis Favorit Anda
-              dalam Sekejap!</p>
-            <p><a class="btn btn-lg btn-light" href="https://wa.me/6289677862100?text=E-Brut%20Order%20Form%20%F0%9F%8D%BD%0AHello%20Foodie!%20Ready%20to%20indulge%20in%20some%20deliciousness%3F%0A%0A%F0%9F%8C%9F%20Customer%20Details%20%F0%9F%8C%9F%0ANama%20%20%20%20%20%3A%0AAlamat%20%20%20%3A%0ANo%20Telp%20%3A%0A%0A%F0%9F%8D%97%20Your%20Delicious%20Order%F0%9F%8D%97%0A1.%20%0A2.%20%0A3.%20%0A%0A%F0%9F%92%B8%20Payment%20Options%20%F0%9F%92%B8%0A%0A%F0%9F%92%B0%20Shopeepay%3A%0A082338556431%20%0Aan.%20Muizzul%20Azizah%20Oktavianing%20Putri%20%2F%20Putri%20Oktavia%0A%0A%F0%9F%8D%B4%20Bon%20App%C3%A9tit!
-">Pesan
-                Sekarang</a></p>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h1 data-aos="zoom-in" data-aos-delay="500">Welcome to Hilsaveil</h1>
+          <p data-aos="zoom-in" data-aos-delay="750">
+            A fashion-forward hijab brand created especially for modern Muslim women who want to express themselves
+            while
+            embracing their faith. We believe that wearing hijab should be meaningful and stylish.
+
+          </p>
+          <p data-aos="zoom-in" data-aos-delay="1000">
+            <a class="btn btn-lg btn-primary text-white" href="#contact">
+              Order Now
+            </a>
+          </p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- END OF CAROUSEL -->
+  </section>
+  <!-- END OF HERO -->
+
+  <section class="bg-light py-5">
+  </section>
 
   <!-- ABOUT -->
-  <section id="about" class="text-bg-light py-5">
+  <section id="about" class="bg-primary text-white py-5">
     <div class="container">
       <div class="row align-items-center flex-lg-row-reverse">
         <div class="col-lg-6" data-aos="fade-left">
           <img src="./assets/img/bg4.jpg" alt="" class="img-fluid rounded-3 mb-5 m-lg-0">
         </div>
         <div class="col-lg-6">
-          <h3 data-aos="fade-right" data-aos-delay="250" class="display-4 text-dark mb-5">Tentang Kami</h3>
-          <p class="lead text-muted text-justify" data-aos="fade-right" data-aos-delay="500">
-            Selain menyajikan hidangan yang luar biasa, Enak Brutal beroperasi secara daring, memberikan kemudahan bagi
-            pelanggan untuk menikmati makanan lezat kami di mana pun mereka berada. Melalui platform daring kami,
-            pelanggan dapat dengan mudah melakukan transaksi dengan menghubungi kami melalui WhatsApp dan Instagram yang
-            tertera. Kami menyediakan layanan pengiriman sehingga Anda dapat menikmati kelezatan Enak Brutal di
-            kenyamanan rumah Anda sendiri. Jadikan setiap hari Anda lebih enak dengan Ayam Geprek kami yang renyah atau
-            Cheese Roll yang menggoda. Segera hubungi kami untuk memesan dan rasakan sensasi brutal kelezatan yang kami
-            tawarkan!
+          <h3 data-aos="fade-right" data-aos-delay="250" class="display-4  mb-5">
+            About Us
+          </h3>
+
+          <h4 data-aos="fade-right" data-aos-delay="300" class="">
+            Vision
+          </h4>
+          <p class="lead text-justify" data-aos="fade-right" data-aos-delay="350">
+            We are dedicated to creating hijab that combines comfort, quality, and the latest fashion trends. Our
+            designs are lovingly crafted, inspired by the vibrant lifestyles of teenagers, and designed to help young
+            Muslim women shine with confidence.
+          </p>
+
+          <h4 data-aos="fade-right" data-aos-delay="400" class="">
+            Mission
+          </h4>
+          <p class="lead text-justify" data-aos="fade-right" data-aos-delay="450">
+            We empower young Muslimahs by providing fashionable, high-quality hijabs at affordable prices. We believe
+            that modest fashion should never come at the expense of style, and we strive to create clothes that reflect
+            your unique personality.
           </p>
         </div>
       </div>
@@ -186,45 +169,287 @@
   </section>
   <!-- END OF ABOUT -->
 
-  <!-- POSTS -->
-  <section id="posts" class="py-5 text-bg-secondary">
+
+  <section class="bg-light py-5">
     <div class="container">
-      <h3 class="display-4 text-center mb-5" data-aos="fade-up">Daftar Menu</h3>
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="./assets/img/bg6.jpg" alt="" class="img-fluid rounded-3 mb-5 m-lg-0">
+        </div>
+        <div class="col-lg-6">
+          <h3 data-aos="fade-right" data-aos-delay="250" class="display-4 mb-3 text-dark">
+            Why Choose Us?
+          </h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light border-dark text-dark d-flex justify-content-between align-items-start"
+              data-aos="fade-right" data-aos-delay="500">
+              <div class="ms-2 me-auto lead">
+                <div class="fw-bold">Trendy designs</div>
+                Young Muslim women stay ahead of the latest fashion trends with our chic and youthful hijab collection.
+              </div>
+            </li>
+            <li class="list-group-item bg-light border-dark text-dark d-flex justify-content-between align-items-start"
+              data-aos="fade-right" data-aos-delay="650">
+              <div class="ms-2 me-auto lead">
+                <div class="fw-bold">Comfort & Quality</div>
+                We use soft and breathable materials to ensure all-day comfort.
+              </div>
+            </li>
+            <li class="list-group-item bg-light border-dark text-dark d-flex justify-content-between align-items-start"
+              data-aos="fade-right" data-aos-delay="700">
+              <div class="ms-2 me-auto lead">
+                <div class="fw-bold">Affordable Prices</div>
+                We offer stylish hijabs that fit every budget.
+              </div>
+            </li>
+            <li class="list-group-item bg-light border-dark text-dark d-flex justify-content-between align-items-start"
+              data-aos="fade-right" data-aos-delay="850">
+              <div class="ms-2 me-auto lead">
+                <div class="fw-bold">Teen-Focused Community</div>
+                Join a community of confident young Muslim women who love fashion and supporting each other.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section id="posts" class="py-5 bg-primary text-light">
+    <div class="container">
+      <h3 class="display-4 mb-5" data-aos="fade-right">Our Products</h3>
       <div class="row">
-        <div class="col-12 col-lg-4 mb-3 position-relative menu-item" data-aos="fade-up">
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up">
           <img src="./assets/img/menu1.jpg" alt="" class="img-fluid rounded">
           <div
             class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
             style="background-color: rgba(0, 0, 0, .5);">
             <div class="text-center">
-              <h5>Ayam Geprek</h5>
+              <h5>Black</h5>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="250">
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="250">
           <img src="./assets/img/menu2.jpg" alt="" class="img-fluid rounded">
           <div
             class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
             style="background-color: rgba(0, 0, 0, .5);">
             <div class="text-center">
-              <h5>Teh Manis</h5>
+              <h5>Grey</h5>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="500">
           <img src="./assets/img/menu3.jpg" alt="" class="img-fluid rounded">
           <div
             class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
             style="background-color: rgba(0, 0, 0, .5);">
             <div class="text-center">
-              <h5>Cheese Roll</h5>
+              <h5>Navy</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="750">
+          <img src="./assets/img/menu4.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Olive</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="1000">
+          <img src="./assets/img/menu5.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Pink</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="1250">
+          <img src="./assets/img/menu6.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Choco</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="1500">
+          <img src="./assets/img/menu7.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Burgundy</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-3 position-relative menu-item" data-aos="fade-up" data-aos-delay="1750">
+          <img src="./assets/img/menu8.jpg" alt="" class="img-fluid rounded">
+          <div
+            class="p-3 d-flex justify-content-center align-items-center position-absolute start-0 top-0 h-100 w-100 menu-item-desc"
+            style="background-color: rgba(0, 0, 0, .5);">
+            <div class="text-center">
+              <h5>Nude</h5>
             </div>
           </div>
         </div>
       </div>
+
+
     </div>
   </section>
   <!-- END OF POSTS -->
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3" data-aos="fade-down">
+
+          <h4 class="text-dark display-4">Material</h4>
+          <p class="lead text-dark text-justify">
+            Our hijabs are crafted from premium jersey, a material that is soft, elastic, light, and comfortable on the
+            skin. This fabric drapes beautifully, ensuring a neat and elegant appearance. Additionally, it is
+            anti-tangle and easy to care for, making it a practical choice for everyday wear. The breathable nature of
+            the fabric also ensures that you stay cool and comfortable throughout the day.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-3" data-aos="fade-down" data-aos-delay="250">
+
+          <h4 class="text-dark display-4">Superiority</h4>
+          <p class="lead text-dark text-justify">
+            Designed for ultimate comfort, ensuring they are not hot and suitable for both daily use
+            and formal events. The flexible material makes it easy to shape the veil as desired, providing a perfect
+            fit every time. They are also durable, maintaining their shape even with intensive use. Additionally,
+            the anti-crinkle feature ensures they stay neat without requiring much maintenance.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-3" data-aos="fade-down" data-aos-delay="500">
+
+          <h4 class="text-dark display-4">Benefits</h4>
+          <p class="lead text-dark text-justify">
+            Boost your confidence by providing a neat and elegant appearance for various
+            occasions. They are time-efficient, easy to use without requiring complicated settings. Additionally,
+            they protect your hair and scalp from exposure to sunlight and dust. These hijabs are flexible and
+            suitable for casual activities, work, or formal events such as weddings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIES -->
+  <section id="testimonies" class="bg-primary py-5">
+    <div class="container">
+      <h3 class="display-4 text-white mb-5">Testimonies</h3>
+      <div class="row flex-nowrap overflow-x-auto">
+        <div class="col-11 col-lg-5 mb-3">
+          <div class="card mb-3 bg-light text-dark">
+            <div class="card-body p-5">
+              <p class="text-justify">Highly recommended to anyone looking for a stylish and high-quality hijab.
+                Definitely worth every penny!</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO BULAT.jpg" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">Jane Smith</h6>
+                  <p class="m-0 text-muted">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 bg-light text-dark">
+            <div class="card-body p-5">
+              <p class="text-justify">I absolutely love my Hilsaveil hijab! The fabric is incredibly soft, lightweight,
+                and breathable, making it comfortable for daily wear. The design is simple yet elegant, perfect for both
+                casual and formal occasions.</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO BULAT.jpg" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">Aliefia03</h6>
+                  <p class="m-0 text-muted">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-11 col-lg-5 mb-3">
+          <div class="card mb-3 bg-light text-dark">
+            <div class="card-body p-5">
+              <p class="text-justify">The color options are stunning, and the hijab stays in place all day without
+                constant adjustments. Shipping was quick, and the product came in beautiful packaging.</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO BULAT.jpg" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">Fitri</h6>
+                  <p class="m-0 text-muted">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 bg-light text-dark">
+            <div class="card-body p-5">
+              <p class="text-justify">The product exceeded my expectations! Fast delivery, great quality, and amazing
+                customer service. Will definitely purchase again!</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO BULAT.jpg" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">Naura_0145</h6>
+                  <p class="m-0 text-muted">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-11 col-lg-5 mb-3">
+          <div class="card mb-3 bg-light text-dark">
+            <div class="card-body p-5">
+              <p class="text-justify">
+                I love the quality of the fabric and the beautiful colors. It is easy to style and stays in place
+                all day. Highly recommend to anyone looking for a stylish and comfortable hijab.
+              </p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO BULAT.jpg" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">Rania</h6>
+                  <p class="m-0 text-muted">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 bg-light text-dark">
+            <div class="card-body p-5">
+              <p class="text-justify">Absolutely love Hilsaveil! The fabric is soft and breathable, and it looks so
+                elegant. Perfect for both daily wear and special events.</p>
+              <div class="d-flex">
+                <img src="./assets/img/LOGO BULAT.jpg" alt="Bootstrap" width="32" height="32"
+                  class="rounded-circle border border-primary">
+                <div class="ms-3">
+                  <h6 class="m-0">Ima</h6>
+                  <p class="m-0 text-muted">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- END OF TESTIMONIES -->
 
   <!-- CONTACT -->
   <section id="contact" class="text-bg-light">
@@ -235,84 +460,70 @@
       </div>
       <div class="col-lg-6">
         <div class="container">
-          <h3 class="display-4 text-dark mb-4 mt-3" data-aos="fade-right">Hubungi Kami</h3>
-          <div class="row">
-            <div class="col mb-3" data-aos="fade-right">
-              <a href="https://wa.me/6289677862100?text=E-Brut%20Order%20Form%20%F0%9F%8D%BD%0AHello%20Foodie!%20Ready%20to%20indulge%20in%20some%20deliciousness%3F%0A%0A%F0%9F%8C%9F%20Customer%20Details%20%F0%9F%8C%9F%0ANama%20%20%20%20%20%3A%0AAlamat%20%20%20%3A%0ANo%20Telp%20%3A%0A%0A%F0%9F%8D%97%20Your%20Delicious%20Order%F0%9F%8D%97%0A1.%20%0A2.%20%0A3.%20%0A%0A%F0%9F%92%B8%20Payment%20Options%20%F0%9F%92%B8%0A%0A%F0%9F%92%B0%20Shopeepay%3A%0A082338556431%20%0Aan.%20Muizzul%20Azizah%20Oktavianing%20Putri%20%2F%20Putri%20Oktavia%0A%0A%F0%9F%8D%B4%20Bon%20App%C3%A9tit!
-" target="_blank">
-                <img src="./assets/img/wa.png" alt="" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-            <div class="col" data-aos="fade-right" data-aos-delay="250">
-              <a href="https://www.instagram.com/ebrut_" target="_blank">
-                <img src="./assets/img/ig.jpg" alt="" class="img-fluid rounded">
-              </a>
-            </div>
-          </div>
+          <h3 class="display-4 text-dark mb-4 mt-3">Contact Us</h3>
+          <p class="lead text-dark">
+            If you have any questions or need help, please feel free to contact us. We are here to help you.
+          </p>
+          <p class="lead text-dark">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:support@myveil.com">support@myveil.com</a>
+          </p>
+          <p class="lead text-dark">
+            <i class="bi bi-whatsapp"></i>
+            <a href="https://wa.me/6285975242236" target="_blank">Klik di sini untuk
+              chat langsung</a>
+          </p>
+          <p class="lead text-dark">
+            <i class="bi bi-instagram"></i>
+            <a href="https://instagram.com/myveil" target="_blank">@myveil</a>
+          </p>
+          <p class="lead text-dark">
+            <i class="bi bi-facebook"></i>
+            <a href="https://facebook.com/myveil" target="_blank">My Veil Official</a>
+          </p>
+          <p class="lead text-dark">
+            <i class="bi bi-tiktok"></i>
+            <a href="https://tiktok.com/@myveilstyle" target="_blank">@myveilstyle</a>
+          </p>
+
         </div>
       </div>
-    </div>
   </section>
   <!-- END OF CONTACT -->
 
-  <!-- TESTIMONIES -->
-  <section id="testimonies" class="text-bg-secondary py-5">
+  <section class="py-5 bg-primary">
     <div class="container">
-      <div class="row flex-lg-row-reverse">
-        <div class="col-12 col-lg-8 mb-3">
-          <div class="card text-bg-light">
-            <div class="card-body p-5">
-              <h3 class="display-4 mb-5">Testimoni</h3>
-              <form onsubmit="submitForm(event)">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama</label>
-                  <input type="text"
-                    class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0"
-                    id="name" name="nama" required placeholder="">
-                </div>
-                <div class="mb-3">
-                  <label for="wa" class="form-label">No. WhatsApp</label>
-                  <input type="tel" pattern="[0-9]{10,14}"
-                    class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0" id="wa"
-                    name="nomorWa" required placeholder="">
-                </div>
-                <div class="mb-3">
-                  <label for="title">Judul</label>
-                  <input type="text"
-                    class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0"
-                    id="title" required placeholder="" name="judul">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Pesan</label>
-                  <textarea class="form-control border-0 bg-transparent border-bottom shadow-none border-dark rounded-0"
-                    id="message" rows="3" required placeholder="" name="pesan"></textarea>
-                </div>
-                <div class="d-grid gap-2">
-                  <input type="submit" name="submit" class="btn btn-primary" value="Kirim">
-                </div>
-              </form>
-            </div>
-          </div>
+      <div class="text-white mb-5">
+        <h4 class="display-4 mb-5">
+          Join Our Journey
+        </h4>
+        <p class="lead">
+          We are more than just a hijab store - we are a movement for positive and empowering self-expression. Follow us
+          on
+          social media and be a part of our growing family, where fashion and faith meet.
+          Let's create beautiful memories together, with one stylish hijab!
+        </p>
+      </div>
+
+      <div class="row text-white mb-3">
+        <div class="col-12 col-lg-6">
+          <h4>Subscribe to Our Newsletter</h4>
+          <p class="lead">Get exclusive promo information and special discounts for loyal customers.</p>
+
         </div>
-        <div class="col-12 col-lg-4 mb-3" id="testimonies-wrapper">
-          <div class="card mb-3 bg-light text-dark">
-            <!-- loading animation-->
-            <div class="card-body p-5">
-              <div class="d-flex justify-content-center align-items-center mb-3">
-                <div class="spinner-border text-primary" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-              </div>
-              <div class="text-center">Tunggu sebentar...</div>
-            </div>
-          </div>
+        <div class="col-12 col-lg-6">
+          <h4>Join Our Giveaway</h4>
+          <p class="lead">Get a chance to win a FREE premium pashmina just for you.</p>
+
         </div>
+      </div>
+      <a href="#" class="btn btn-light btn-lg text-dark">Register</a>
+    </div>
   </section>
-  <!-- END OF TESTIMONIES -->
 
   <!-- FOOTER -->
   <footer class="bg-light text-dark py-3">
-    <p class="text-center m-0">© 2024 Enak Brutal. All rights reserved.</p>
+    <p class="text-center m-0">© 2024 Hilsaveil. All rights reserved.</p>
   </footer>
   <!-- END OF FOOTER -->
 
@@ -328,77 +539,6 @@
       once: true,
       duration: 1000
     });
-  </script>
-
-  <script>
-
-    const apiURL = "https://script.google.com/macros/s/AKfycbyZ-l-QrUkbv4vtnhPy4n5_t79jRtlEoUd8arjeB2jWO_aYsd3QAjPjrTYIt227H8E-NQ/exec"
-
-    async function submitForm(event) {
-      event.preventDefault();
-
-      event.target.submit.disabled = true;
-      event.target.submit.value = 'Mengirim...';
-
-      const formData = {
-        nama: event.target.nama.value,
-        nomorWa: event.target.nomorWa.value,
-        pesan: event.target.pesan.value,
-        judul: event.target.judul.value,
-        timestamp: new Date().toISOString(),
-      }
-
-      testimoniesWrapper.prepend(createTestimonyCard(formData));
-
-      fetch(apiURL, {
-        method: 'POST',
-        body: JSON.stringify(formData),
-      }).finally(() => {
-        event.target.reset();
-        event.target.submit.disabled = false;
-        event.target.submit.value = 'Kirim';
-      });
-    }
-
-    let data;
-    const testimoniesWrapper = document.getElementById('testimonies-wrapper');
-
-    function createTestimonyCard(item) {
-      const date = new Date(item.timestamp).toLocaleDateString('id-ID', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
-      });
-
-      const card = document.createElement('div');
-      card.classList.add('card', 'mb-3', 'bg-light', 'text-dark');
-
-      card.innerHTML = `
-          <div class="card-body p-5">
-            <h5 class="card-title">${item.judul}</h5>
-            <p class="text-justify">${item.pesan}</p>
-            <h6 class="m-0">${item.nama}</h6>
-            <p class="m-0 text-muted">${date}</p>
-          </div>
-      `
-      return card
-    }
-
-    async function fetchAndDisplayData() {
-      const response = await fetch(apiURL);
-      data = await response.json();
-
-      const template = data
-        .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
-        .map(createTestimonyCard)
-
-      testimoniesWrapper.innerHTML = '';
-      template.forEach(card => testimoniesWrapper.appendChild(card));
-    }
-
-    const interval = setInterval(fetchAndDisplayData, 5000);
-
-    window.onload = interval;
   </script>
 
 </body>
